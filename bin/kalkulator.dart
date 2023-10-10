@@ -4,6 +4,7 @@ class Kalkulator {
   var _angka1;
   var _angka2;
   var _operator;
+  var _hasil;
 
   double getAngka1() {
     stdout.write("Masukan Angka 1 : ");
@@ -25,5 +26,18 @@ class Kalkulator {
     stdout.write("Silahkan pilih salah satu operator diatas: ");
     _operator = double.parse(stdin.readLineSync()!);
     return _operator;
+  }
+
+  double hitung(){
+    if(_operator==1){
+      _hasil=_angka1+_angka2;
+    }else if(_operator==2){
+      _hasil=_angka1-_angka2;
+    }else if(_operator==3){
+      _hasil=_angka1*_angka2;
+    }else if(_operator==4){
+      _hasil=_angka1/_angka2;
+    }
+    return _hasil;
   }
 }
