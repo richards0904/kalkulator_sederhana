@@ -28,16 +28,20 @@ class Kalkulator {
     return _operator;
   }
 
-  double hitung(){
-    if(_operator==1){
-      _hasil=_angka1+_angka2;
-    }else if(_operator==2){
-      _hasil=_angka1-_angka2;
-    }else if(_operator==3){
-      _hasil=_angka1*_angka2;
-    }else if(_operator==4){
-      _hasil=_angka1/_angka2;
+  double hitung() {
+    if (_operator == 1) {
+      _hasil = _angka1 + _angka2;
+    } else if (_operator == 2) {
+      _hasil = _angka1 - _angka2;
+    } else if (_operator == 3) {
+      _hasil = _angka1 * _angka2;
+    } else if (_operator == 4) {
+      _hasil = _angka1 / _angka2;
     }
     return _hasil;
+  }
+
+  void TampilHasil() {
+    print("Hasil = $_hasil");
   }
 }
