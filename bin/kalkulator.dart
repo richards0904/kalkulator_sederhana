@@ -41,7 +41,7 @@ class Kalkulator {
     return _hasil;
   }
 
-  void TampilHasil() {
+  void tampilHasil() {
     print("Hasil = $_hasil");
   }
 }
