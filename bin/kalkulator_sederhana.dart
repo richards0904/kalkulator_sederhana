@@ -13,7 +13,7 @@ void main(List<String> arguments) {
         print("Data yang anda masukan kosong atau salah. Silahkan Ulangi!");
       } finally {
         print("\n");
-        stdout.write("Apakah anda ingin melakukan perhitungan lain [Y/T] : ");
+        stdout.write("Apakah anda ingin melakukan perhitungan lain? [Y/T] : ");
         var ulang = stdin.readLineSync();
         if (ulang!.toUpperCase() == "Y") {
           a = true;
